@@ -360,6 +360,7 @@ body {
 .team-section {
     text-align: center;
     padding: 50px 20px;
+    color: #333;
 }
 
 .team-section h1 {
@@ -412,6 +413,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .news-section {
