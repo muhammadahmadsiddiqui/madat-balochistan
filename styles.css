@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background-color: rgb(0, 102, 51);
+    background-color: #3f6b7f;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -37,7 +37,7 @@ body {
   }
   
   nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -130,7 +130,8 @@ body {
   }
   
   .hero h2 {
-    color: #00e673;
+    font-size: 2em;
+    color: #5eecff;
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
@@ -527,7 +528,7 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2C3E50; /* Dark background for footer */
+    background-color: #3f6b7f; /* Background for footer */
     color: white;
     padding: 20px 0;
 }
@@ -556,7 +557,7 @@ body {
 .footer-navigation h3, .footer-contact h3, .footer-social h3 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #E74C3C; /* Red color for headings */
+    color: #da442d; /* Red color for headings */
 }
 
 .footer-navigation ul {
@@ -569,7 +570,7 @@ body {
 }
 
 .footer-navigation ul li a {
-    color: #3498DB; /* Blue color for links */
+    color: #ffffff; 
     text-decoration: none;
 }
 
