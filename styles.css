@@ -6,21 +6,30 @@ body {
   }
   
   header {
-    background-color: #2C3E50;
+    background-color: rgb(0, 102, 51);
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
     align-items: center;
   }
   
-  .social-icons a {
-    margin-right: 10px;
-    color: white;
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 60px; /* Default logo height */
+    max-height: 100px; /* Ensures it doesn't grow too large */
+    width: auto; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures the logo fits neatly without distortion */
   }
   
   nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
   }
   
   nav ul li {
@@ -31,12 +40,31 @@ body {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 16px;
+  }
+  
+  @media (max-width: 1024px) {
+    .logo img {
+      height: 50px; /* Slightly smaller for medium screens */
+    }
+    
+    nav ul li a {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
   }
   
   @media (max-width: 768px) {
     header {
       flex-direction: column;
       align-items: flex-start;
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Adds spacing below the logo */
+    }
+  
+    .logo img {
+      height: 40px; /* Smaller size for mobile */
     }
   
     nav ul {
@@ -47,7 +75,22 @@ body {
     nav ul li {
       margin: 5px 0;
     }
+  
+    nav ul li a {
+      font-size: 14px;
+    }
   }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      height: 35px; /* Ensure readability on very small screens */
+    }
+  
+    nav ul li a {
+      font-size: 12px; /* Compact font size for better fit */
+    }
+  }
+  
   
   .hero {
     position: relative;
@@ -537,4 +580,23 @@ body {
 .footer-contact p, .footer-social p {
     margin: 0;
     color: #ECF0F1; /* Light color for text */
+}
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  color: #ECF0F1; 
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-social a:hover {
+  color: #3498DB; 
+}
+
+.footer-social i {
+  font-size: 18px; 
+  margin-right: 10px;
+  color: #E74C3C; 
 }
