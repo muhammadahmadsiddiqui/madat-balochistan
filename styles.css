@@ -6,7 +6,7 @@ body {
   }
   
   header {
-    background-color: #006e3e;
+    background-color: #2C3E50;
     display: flex;
     justify-content: space-between;
     padding: 15px 30px;
@@ -51,7 +51,7 @@ body {
   
   .hero {
     position: relative;
-    background: url("assets/hero.jpg") no-repeat center center/cover;
+    background: url("media/hero.JPG") no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .hero .content {
@@ -87,7 +87,7 @@ body {
   }
   
   .hero h2 {
-    color: #00b359;
+    color: #00e673;
     letter-spacing: 2px;
     margin-bottom: 20px;
   }
@@ -408,17 +408,11 @@ body {
 
 
 /* Latest News */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
 
 .news-section {
     text-align: center;
     padding: 50px 20px;
+    color: #333;
 }
 
 .news-section h1 {
@@ -471,6 +465,22 @@ body {
 .news-content p {
     font-size: 14px;
 }
+
+.read-more-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.read-more-button:hover {
+  background-color: #0056b3;
+}
+
 
 /* Footer */
 .footer {
